@@ -12,6 +12,6 @@ if (isset($_POST['id']) && isset($_POST['username']) && isset($_POST['email']) &
         echo "Failed to create entry";
     }
 } else {
-    echo "Missing required data";
+    echo "Missing required data.";
 }
 ?>
