@@ -51,15 +51,6 @@ class DatabaseHandler{
             return (array());
         }    
     }
-    
-    
-    /*
-            $tableRows = $object->readAll();
-            if($tableRows != 0){
-                $tableRowsString = implode('', $tableRows);
-                echo "<table>{$tableRowsString}</table>";
-            }
-     */
 
     public function readById($id){
         // code to fetch user data from database based on his/her id
@@ -91,14 +82,7 @@ class DatabaseHandler{
             return 0; // failed to prepare statement
         }
     }
- /*
-    $tableRow = $object->readById($id);
-    if(strpos($tableRow, 'Failed') === false && strpos($tableRow, 'No user') === false){
-        echo "<table>{$tableRow}</table>";
-    } else {
-        echo $tableRow;
-    } 
- */    
+
 
 public function updateEntry($id, $username, $email, $pass, $fav_supe){
     // code for updating an entry if present
